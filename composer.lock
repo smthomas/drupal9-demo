@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78752c96220fcf2ebf6da34790137b5d",
+    "content-hash": "50fc33f6cd1d4db07461918162854097",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1631,6 +1631,115 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "time": "2020-05-22T22:32:46+00:00"
+        },
+        {
+            "name": "drupal/gatsby",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gatsby.git",
+                "reference": "036e5af199f09121018e0f7e562cedbe7470b5f1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/gatsby_instantpreview": "*",
+                "drupal/jsonapi_extras": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1+1-dev",
+                    "datestamp": "1591408180",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "codekarate",
+                    "homepage": "https://www.drupal.org/user/506260"
+                },
+                {
+                    "name": "johnnybgoode",
+                    "homepage": "https://www.drupal.org/user/980926"
+                },
+                {
+                    "name": "mrjmd",
+                    "homepage": "https://www.drupal.org/user/1800446"
+                }
+            ],
+            "description": "Enables Live Preview for Gatsby",
+            "homepage": "https://www.drupal.org/project/gatsby",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/gatsby",
+                "issues": "https://www.drupal.org/project/issues/gatsby"
+            },
+            "time": "2020-06-30T21:54:03+00:00"
+        },
+        {
+            "name": "drupal/olivero",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/olivero.git",
+                "reference": "4f0ff3eb20bf5b54f322985bd34688202ef7cf47"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3+33-dev",
+                    "datestamp": "1593981198",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mherchel",
+                    "homepage": "https://www.drupal.org/user/118428"
+                },
+                {
+                    "name": "mtift",
+                    "homepage": "https://www.drupal.org/user/751908"
+                },
+                {
+                    "name": "proeung",
+                    "homepage": "https://www.drupal.org/user/1785940"
+                }
+            ],
+            "description": "A clean, modern, and accessible Drupal default theme.",
+            "homepage": "https://www.drupal.org/project/olivero",
+            "support": {
+                "source": "https://git.drupalcode.org/project/olivero",
+                "issues": "https://www.drupal.org/project/issues/olivero"
+            },
+            "time": "2020-07-08T12:23:26+00:00"
         },
         {
             "name": "drush/drush",
@@ -5293,7 +5402,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/gatsby": 20,
+        "drupal/olivero": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

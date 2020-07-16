@@ -1,0 +1,8 @@
+name: drupal9-demo
+recipe: pantheon
+config:
+  framework: drupal9
+  site: drupal9-demo
+  id: 8736e413-49fb-46f5-b981-2eac11494bc7
+  webroot: web
+  xdebug: true
